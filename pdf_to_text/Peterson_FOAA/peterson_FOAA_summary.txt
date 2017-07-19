@@ -1,0 +1,11 @@
+Homework 15
+PDF to Text Summary
+File 1
+
+
+The file came from here: https://www.muckrock.com/foi/maine-13/public-records-request-log-maine-governors-office-16667/#file-37922
+
+This PDF is a log of public records requests made to the Maine Governor's Office between June 2013 and March 2015.
+
+I used Tabula to autodetect the tables and created a CSV file. On first upload the column headers were moved down into the table, so I fixed them in Sublime Text (it seemed the easiest and fastest way). The data was very clean-the only other issue was that in the "subject of request" column, sometimes there were two lines of text but NaN values in the other columns. I used a backfill to fix that (after looking at the data and determining that was what was needed).
+

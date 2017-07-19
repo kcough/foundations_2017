@@ -1,0 +1,186 @@
+Last login: Mon Jun  5 10:44:40 on ttys002
+dyn-160-39-148-220:~ kaitlincough$ pip install pandas
+Collecting pandas
+  Downloading pandas-0.20.2-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl (14.8MB)
+    100% |████████████████████████████████| 14.8MB 82kB/s 
+Collecting numpy>=1.7.0 (from pandas)
+  Downloading numpy-1.12.1-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl (4.4MB)
+    100% |████████████████████████████████| 4.4MB 273kB/s 
+Requirement already satisfied: python-dateutil>=2 in /usr/local/lib/python3.6/site-packages (from pandas)
+Collecting pytz>=2011k (from pandas)
+  Downloading pytz-2017.2-py2.py3-none-any.whl (484kB)
+    100% |████████████████████████████████| 491kB 2.2MB/s 
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.6/site-packages (from python-dateutil>=2->pandas)
+Installing collected packages: numpy, pytz, pandas
+Successfully installed numpy-1.12.1 pandas-0.20.2 pytz-2017.2
+dyn-160-39-148-220:~ kaitlincough$ pip install matplotlib
+Collecting matplotlib
+  Downloading matplotlib-2.0.2-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl (12.8MB)
+    100% |████████████████████████████████| 12.8MB 63kB/s 
+Requirement already satisfied: pytz in /usr/local/lib/python3.6/site-packages (from matplotlib)
+Requirement already satisfied: numpy>=1.7.1 in /usr/local/lib/python3.6/site-packages (from matplotlib)
+Collecting cycler>=0.10 (from matplotlib)
+  Downloading cycler-0.10.0-py2.py3-none-any.whl
+Requirement already satisfied: six>=1.10 in /usr/local/lib/python3.6/site-packages (from matplotlib)
+Collecting pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=1.5.6 (from matplotlib)
+  Downloading pyparsing-2.2.0-py2.py3-none-any.whl (56kB)
+    100% |████████████████████████████████| 61kB 8.6MB/s 
+Requirement already satisfied: python-dateutil in /usr/local/lib/python3.6/site-packages (from matplotlib)
+Installing collected packages: cycler, pyparsing, matplotlib
+Successfully installed cycler-0.10.0 matplotlib-2.0.2 pyparsing-2.2.0
+dyn-160-39-148-220:~ kaitlincough$ brew install git
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> New Formulae
+angular-cli     bartycrouch     druid           grakn           mariadb@10.1
+asdf            cython          fsql            jhipster        zeromq@4.1
+==> Updated Formulae
+advancemame                groonga                    osquery
+algernon                   heroku                     p11-kit
+allure                     hg-fast-export             pachi
+ammonite-repl              highlight                  packetbeat
+ansible                    hive                       paket
+apache-flink               hugo                       pandoc-citeproc
+arangodb                   hyper                      pango
+armor                      i3status                   pcap_dnsproxy
+artifactory                imagemagick                pcsc-lite
+aubio                      imagemagick@6              pdf2htmlex
+awf                        imageworsener              pdftoedn
+aws-sdk-cpp                imake                      pgpdump
+awscli                     influxdb@0.8               pgplot
+babl                       instead                    planck
+bandcamp-dl                jenkins                    poppler
+bastet                     jenkins-lts                portmidi
+bear                       jfrog-cli-go               ppsspp
+bee                        jmeter                     pre-commit
+bmon                       jsonschema2pojo            purescript
+calc                       juju                       pyexiv2
+certbot                    juju@1.25                  pyinvoke
+chakra                     jvgrep                     pypy3
+checkstyle                 kapacitor                  qbs
+chronograf                 kerl                       qcachegrind
+cimg                       kibana                     qt
+citus                      kobalt                     radare2
+ckan                       kompose                    rancher-cli
+closure-compiler           lablgtk                    rbenv-ctags
+cmake                      latex2rtf                  re2
+cmark-gfm                  lfe                        rmlint
+cockroach                  libass                     rocksdb
+colordiff                  libdap                     rom-tools
+conan                      libgcrypt                  roswell
+confuse                    libgit2-glib               rpm
+consul-backinator          libgweather                rswift
+consul-template            libhttpseverywhere         rtags
+convox                     libimobiledevice           ruby-build
+cromwell                   libmagic                   s6
+crowdin                    libmicrohttpd              sane-backends
+dbhash                     libphonenumber             sassc
+dbt                        libplist                   sbcl
+deis                       libsass                    sfcgal
+dfmt                       libtasn1                   shc
+di                         libtiff                    shfmt
+diff-pdf                   libuv                      smali
+django-completion          libvidstab                 smlnj
+dmd                        libvirt                    sourcekitten
+dmenu                      libxml2                    sourcery
+docker-cloud               libzzip                    sqldiff
+docker-credential-helper   llnode                     sqlite ✔
+dpkg                       lmdb                       sqlite-analyzer
+duck                       logstash                   sqlmap
+elasticsearch              logtalk                    sslyze
+elvish                     lxc                        stern
+exiv2                      mame                       strongswan
+fibjs                      mariadb                    supervisor
+file-formula               mariadb@10.0               swiftformat
+filebeat                   media-info                 swiftlint
+firebase-cli               metabase                   syncthing
+fish                       metricbeat                 telegraf
+flow                       micro                      terraform
+fluent-bit                 micropython                terragrunt
+folly                      mikutter                   tesseract
+fonttools                  minetest                   the_silver_searcher
+fop                        mingw-w64                  tippecanoe
+freeciv                    miniupnpc                  tmux
+freeradius-server          mongo-c-driver             tnef
+freetds                    mono                       todolist
+fwup                       mosquitto                  translate-shell
+gammu                      mpd                        treefrog
+ganglia                    mpg123                     twine-pypi
+gdb                        mtr                        typescript
+gearman                    mutt                       urh
+geeqie                     ne                         vim
+geoipupdate                neo4j                      wartremover
+gexiv2                     nghttp2                    webpack
+git                        node                       wget
+git-town                   node-build                 wine
+gitbucket                  node@4                     wpcli-completion
+gitg                       node@6                     xmount
+gitlab-ci-multi-runner     notmuch                    xonsh
+global                     npth                       xsv
+gmic                       ntopng                     yank
+gnome-builder              offlineimap                yara
+gnutls                     ola                        yarn
+go                         oniguruma                  yasm
+go@1.7                     openal-soft                yaz
+godep                      opencoarrays               yle-dl
+goenv                      openssl ✔                  youtube-dl
+goofys                     openssl@1.1                yubico-piv-tool
+grafana                    opus                       zanata-client
+grails                     osc
+==> Deleted Formulae
+autotrace                  libtess2                   xplanetfx
+
+==> Downloading https://homebrew.bintray.com/bottles/git-2.13.1.sierra.bottle.ta
+######################################################################## 100.0%
+==> Pouring git-2.13.1.sierra.bottle.tar.gz
+==> Using the sandbox
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+zsh completions and functions have been installed to:
+  /usr/local/share/zsh/site-functions
+
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/git
+==> Summary
+🍺  /usr/local/Cellar/git/2.13.1: 1,466 files, 33.2MB
+dyn-160-39-148-220:~ kaitlincough$ git config --global user.name "kcough"
+dyn-160-39-148-220:~ kaitlincough$ git config --global user.email "kaitlin.cough@gmail.com"
+dyn-160-39-148-220:~ kaitlincough$ git config --global user.email
+kaitlin.cough@gmail.com
+dyn-160-39-148-220:~ kaitlincough$ git config --global user.name
+kcough
+dyn-160-39-148-220:~ kaitlincough$ git config --global user.email "kcough@users.noreply.github.com"
+dyn-160-39-148-220:~ kaitlincough$ git config --global user.email
+kcough@users.noreply.github.com
+dyn-160-39-148-220:~ kaitlincough$ git credential-osxkeychain
+usage: git credential-osxkeychain <get|store|erase>
+dyn-160-39-148-220:~ kaitlincough$ git config --global credential.helper osxkeychain
+dyn-160-39-148-220:~ kaitlincough$ cd Documents
+dyn-160-39-148-220:Documents kaitlincough$ cd Lede
+dyn-160-39-148-220:Lede kaitlincough$ cd soma
+dyn-160-39-148-220:soma kaitlincough$ git clone https://github.com/kcough/foundations.git
+Cloning into 'foundations'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+dyn-160-39-148-220:soma kaitlincough$ cd foundations
+dyn-160-39-148-220:foundations kaitlincough$ ls
+README.md
+dyn-160-39-148-220:foundations kaitlincough$ git commit -a -m "Editing our README"
+[master f18930a] Editing our README
+ 1 file changed, 3 insertions(+)
+dyn-160-39-148-220:foundations kaitlincough$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 351 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/kcough/foundations.git
+   a219298..f18930a  master -> master
+dyn-160-39-148-220:foundations kaitlincough$ git push
+Everything up-to-date
+dyn-160-39-148-220:foundations kaitlincough$ 

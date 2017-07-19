@@ -1,0 +1,138 @@
+#Class Notes
+#Wednesday, May 31 2017
+#Soma
+#Class 4/3 (actually the third class, but should be the fourth)
+
+#1. I have a list called bubblegum. How do I get the first element? The last element?
+
+#print(bubblegum[0]) 
+#print(bubblegum[-1])
+
+#2.What function or method...
+#...tells how many elements are in a list? 
+
+#print(len(bubblegum))
+
+#...replaces text in a string with other text? 
+
+#print("HELLO".replace("I like you", "Dogs are nice"))
+
+#...gives you the keys of a dictionary? 
+
+#print(dictionaryname.keys())
+
+#if you just want the values in the dictionary, use
+
+#print(dictionaryname.values())
+
+#3.What is the output of the following code? Which lines give you errors?
+
+#borough_name = 'Manhattan' #this is fine
+#z = ['Manhattan', 'Queens'] #this is a list
+#x = {'borough_name': 'Manhattan', #this is a dictionary
+#'population': 500}
+#y = { #this is also a dictionary
+	#'Manhattan':500,
+	#'Queens': 200
+#}
+
+#print x['borough_name'] #-->Manhattan #borough name is a string. here you're treating x as a dictionary. This works because x is a #dictionary and borough_name is a value
+
+#print(x[borough_name]) #-->error we're assuming x is a dictionary and we're asking for 
+#print(x[0]) #there is no first thing in x, you can only say that if it's a list, so it's an error 
+#print(y['borough_name']) #assuming y is a dictionary, ask for the key borough_name. y has no key borough_name-->error
+#print(y[borough_name]) #this gives manhattan WHY
+#print(y[0])#-->error because y is a dictionary, not a list, and you can't ask for the number of elements in a list
+#print(z['borough_name'])#-->error because z is not a dictionary, it's a list
+#print(z[borough_name]) #borough name is a string that means manhattan
+#print(z[0]) #this prints Manhattan, because z is a list and it has elements
+
+#4. Print out each art piece's name.
+
+art_pieces = [
+{'title': 'Gold Star', 'year': 1805},
+{'title': 'Blunderbuss', 'year': 1800},
+{'title': 'Chairlift', 'year': 1976},
+{'title': 'Rancor', 'year': 2002},
+]
+
+print(type(art_pieces)) #this tells us it's a dictionary
+#print(art_pieces.keys()) # this will tell us the keys
+
+for piece in art_pieces:
+	print(piece['title'])
+
+#art_pieces is the list. where did piece come from? piece is your new variable that you are calling each element in your list.
+#in this case, the first time piece is used, it's 'title': 'Gold Star', 'year': 1805 the second time it's 'title': 'Blunderbuss', #'year': 1800
+
+#5. Given the following, write code to calculate how many murders we have total
+
+murders = {'Albany':23, 'Kings County':10, 'Rochester':7,'Yonkers':9,}
+
+print(murders.values())
+#this will give you the values in a list
+print(sum(murders.values()))
+
+#list of dictionaries
+
+cities = [
+{'name':'Albany', 'murders': 400},
+{'name':'NYC', 'murders': 20},
+{'name':'Lexington', 'murders': 600}
+]
+
+#how many cities have more than 100 murders every year?
+#the intial condition: how many things do you know about before you start before you've looked at the data? so for the initial condition, say total = 0
+total = 0
+
+for city in cities:
+	print("I found", city['murders'],"murders")
+	total = total + city['murders']
+
+total = 0
+total = total + 20
+total = total + 400
+#each time you're redefining total
+#so for the one above you're using the variable city['murders']
+
+print("Total is", total, "murders")
+
+numbers = [3,6,4,1,10,30]
+
+#make a new list, with each elements
+#being 100 times larger than the original
+#using list comprehensions which are used to transform every element of your data into something new
+
+for number in numbers:
+	print(number*100)
+
+big_numbers = [num * 100 for num in numbers]
+print(big_numbers)
+
+#FIXING ERRORS
+#The error message
+#The code around where the error is happening
+#expected output
+#actual output
+#what you've tried already
+
+#scraping: teaching a computer to read something that is meant for people
+#API allows one computer to talk to another computer
+
+#JSON :: javascript object notation similar to a dictionary, for our purposes it's a dictionary
+#APIs: there's a url formatted in a certain way
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

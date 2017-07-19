@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+  <title>This is a Leaflet map</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css">
+
+  <style>
+  #map {
+    background: orange;
+    width: 100%;
+    height: 400px;
+  }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+
+
+  <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"> // we got this from his website remember</script>
+  <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'>
+//anytime you're trying to access external data open a server in your terminal:python3 -m http.server
+  //then go to localhost:8000 and your directory and find your file https://github.com/mapbox/leaflet-omnivore </script>
+
+
+
+
+  <script>
+  
+ // this all came from the leaflet documentation 
+var map = L.map('map', {
+    center: [51.505, -0.09],
+    zoom: 8
+});
+  // https://leaflet-extras.github.io/leaflet-providers/preview/ --here's where we chose our map. 
+
+var watercolor = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
+  attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  subdomains: 'abcd',
+  minZoom: 1,
+  maxZoom: 16,
+  ext: 'png'
+});
+var OpenSeaMap = L.tileLayer('http://tiles.openseamap.org/seamark/{z}/{x}/{y}.png', {
+  attribution: 'Map data: &copy; <a href="http://www.openseamap.org">OpenSeaMap</a> contributors'
+});
+
+watercolor.addTo(map);
+
+//make this a new variable and add it to the map.
+var house = L.marker([50.5, 30.5])
+.bindTooltip('testing this tooltip')
+.bindPopup('testing this popup')
+// all of this came from the documentation. we're saying here is my house marker. we created the variable house. the code L.marker came from leaflet 
+house.addTo(map)
+//note that it was l.geojson(states) but we don't have that variable anymore so we say(null)
+var geoLayer = L.geoJSON(null, {
+    style: function (feature) {
+        return {color: 'black'};
+    }
+}).bindTooltip(function (layer) {
+    return 'the neighborhood is named' + layer.feature.properties.Boroname;
+})
+geoLayer.addTo(map);
+
+var nabes = omnivore.geojson('neighborhoods.json', null, geoLayer)
+
+nabes.addTo(map)
+
+// the code below came from the states.geojson file he gave us-we made the variable and copy/pasted the info
+
+
+//the code below we took from leaflet documentation -> other layers -> geojson -> usage. we edited it to say 'states' instead of data
+// because that's our variable
+// the stuff below is a dictionary with ONE KEY: style. it says every time you look at one of these polygons look at the style color
+//we changed the color to black. note we only changed it below, not in each one. 
+//we changed bindPopUp below to tool tip because we want to mouse over. 
+//look at the data. what other properties do we have? we have something called 'name' change layer.feature.properties.description to layer.feature.properties.name
+//next, we created a variable geolayer and added it to the map. then we added fitBounds so it fits our map and centers on it.
+//then we went to http://geojson.io/#map=3/51.56/-100.37 and drew some shapes. we clicked on table and added a gdp column
+
+
+
+// map.fitBounds(geoLayer.getBounds())
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+YYYY-MM-DD
+
+design a fill-in-the-blanks model of the entire line.
+
+The ______ day of the _______ month of the year __________
+
+the day is \d+ or [0-9]
+the month is \d+ or [0-9]
+the year is \d+ or [0-9]
+
+the \d+rd day of the \d+th month in the year \d+
+(but this only matches the first line-note the rd)
+
+for the second line you need to have something that matches rd or th:
+\d+[rn]d day of the \d(th|rd) month in the year 
+
+(\d+).*(\d+).*(\d+) 
+
+This is the best option: give me numbers (\d+) and then give me literally anything (.*)
+
+now what if we want to be able to move it around? the year in the front, etc.
+
+We have to capture the pieces we're interested in and rearrange them.
+
+() is capture
+
+\3-\2-\1
+
+hit replace
+
+(\d+).*(\d+).*(\d+) 
+
+We want: 1986-4-3 but it's only giving us the last number, because it thinks everything else is random.
+
+(\d+).*(\d+).*(\d\d\d\d?) 
+this is saying give me at least three, then a ? means maybe another digit if there is one
+(\d+).*(\d+).*(\d{3,4}) 
+
+(\d+).*(\d+)[a-z]*(\d+) 
+
+to add zeros to make it 1986-04-09:
+
+1986-4-9
+
+-(\d)$ >>> is saying if there's a digit after the dash, replace it with 0 , $ is give me whatever you capture
+-0\1-
+
+The 3rd day of the 4th month in the year 1986
+The 2nd day of the 8th month in the year 2001
+The 22nd day of the 3rd month in the year 2003
+The 9th day of the 9th month in the year 800

@@ -1,0 +1,43 @@
+#class notes june 7 2017, wednesday
+#soma
+#dogs and craft beer
+#any file with a . at the front in github is "hidden"
+a .DS_Store file is storing data about the director
+
+adding files to git:
+
+gid add [filename]
+gid add . is saying take all of the files in the current director and keep track of them
+
+filename for git ignore file is .gitignore
+you make a list of everything you don't want added to repository:
+
+for example
+make a sublime text file called .gitignore
+list all the files you DONT WANT in the repository
+
+e.g.
+.DS_Store
+tmp
+*.bac
+
+should be what's written in the sublime text file, saved as .gitignore
+
+if you then do git add .
+while in the proper directory
+it'll ignore everything you asked it to
+
+. means current director
+
+
+SENDING COMMITS TO GITHUB
+
+push them
+
+PULLING CHANGES FROM GITHUB
+
+git pull 
+
+.quit
+.nano
+quit!

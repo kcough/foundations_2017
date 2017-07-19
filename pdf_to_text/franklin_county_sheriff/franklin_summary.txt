@@ -1,0 +1,10 @@
+Kate Cough
+Franklin County Sheriff's Office Summary
+
+The data comes from this page: https://www.muckrock.com/foi/franklin-county-10426/gun-policies-incidents-franklin-county-fl-33794/#files
+
+in response to a request filed by Vanessa Nason
+
+The data is information from the Franklin County Sheriff's office in Eastpoint, Florida, on incidents involving firearms.
+
+I converted the PDF, which did not have readable text, to a png file-first to a series of png files, then to one file-that I then ran tesseract on and was able to upload into a notebook.

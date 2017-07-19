@@ -1,0 +1,938 @@
+Last login: Mon Jul 10 10:56:39 on ttys001
+dyn-160-39-135-68:~ kaitlincough$ pip install pdfminer.six
+Collecting pdfminer.six
+  Downloading pdfminer.six-20170419.tar.gz (9.6MB)
+    100% |████████████████████████████████| 9.7MB 92kB/s 
+Requirement already satisfied: six in /usr/local/lib/python3.6/site-packages (from pdfminer.six)
+Collecting pycrypto (from pdfminer.six)
+  Downloading pycrypto-2.6.1.tar.gz (446kB)
+    100% |████████████████████████████████| 450kB 2.0MB/s 
+Requirement already satisfied: chardet in /usr/local/lib/python3.6/site-packages (from pdfminer.six)
+Building wheels for collected packages: pdfminer.six, pycrypto
+  Running setup.py bdist_wheel for pdfminer.six ... done
+  Stored in directory: /Users/kaitlincough/Library/Caches/pip/wheels/e0/ff/1d/530e38103b97d05947e7c00d88b2b1cbaa22bba3eed56989ef
+  Running setup.py bdist_wheel for pycrypto ... done
+  Stored in directory: /Users/kaitlincough/Library/Caches/pip/wheels/80/1f/94/f76e9746864f198eb0e304aeec319159fa41b082f61281ffce
+Successfully built pdfminer.six pycrypto
+Installing collected packages: pycrypto, pdfminer.six
+Successfully installed pdfminer.six-20170419 pycrypto-2.6.1
+dyn-160-39-135-68:~ kaitlincough$ pip install pdfquery
+Collecting pdfquery
+  Downloading pdfquery-0.4.3.tar.gz
+Collecting cssselect>=0.7.1 (from pdfquery)
+  Downloading cssselect-1.0.1-py2.py3-none-any.whl
+Requirement already satisfied: chardet in /usr/local/lib/python3.6/site-packages (from pdfquery)
+Collecting lxml>=3.0 (from pdfquery)
+  Downloading lxml-3.8.0-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl (7.8MB)
+    100% |████████████████████████████████| 7.9MB 116kB/s 
+Requirement already satisfied: pdfminer.six in /usr/local/lib/python3.6/site-packages (from pdfquery)
+Collecting pyquery>=1.2.2 (from pdfquery)
+  Downloading pyquery-1.2.17-py2.py3-none-any.whl
+Collecting roman>=1.4.0 (from pdfquery)
+  Downloading roman-2.0.0.zip
+Requirement already satisfied: six in /usr/local/lib/python3.6/site-packages (from pdfminer.six->pdfquery)
+Requirement already satisfied: pycrypto in /usr/local/lib/python3.6/site-packages (from pdfminer.six->pdfquery)
+Building wheels for collected packages: pdfquery, roman
+  Running setup.py bdist_wheel for pdfquery ... done
+  Stored in directory: /Users/kaitlincough/Library/Caches/pip/wheels/fe/ad/92/a411bcf029683909ed15f12b2c3615a14f837dfe12fa21d877
+  Running setup.py bdist_wheel for roman ... done
+  Stored in directory: /Users/kaitlincough/Library/Caches/pip/wheels/99/79/24/de86e27f7f327ce2bf9d2663b190b52c7bdf7552caea3c7284
+Successfully built pdfquery roman
+Installing collected packages: cssselect, lxml, pyquery, roman, pdfquery
+Successfully installed cssselect-1.0.1 lxml-3.8.0 pdfquery-0.4.3 pyquery-1.2.17 roman-2.0.0
+dyn-160-39-135-68:~ kaitlincough$ brew install tesseract
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> New Formulae
+git-cinnabar               packetq                    wpscan
+haste-client               tectonic                   zork
+==> Updated Formulae
+ansible-cmdb                             kibana
+arangodb                                 kotlin
+arping                                   kube-aws
+artifactory                              lean-cli
+aws-sdk-cpp                              leptonica
+awscli                                   libgit2
+bacula-fd                                libgit2-glib
+berkeley-db                              libmwaw
+bind                                     libphonenumber
+byacc                                    libpng ✔
+carthage                                 libtiff ✔
+certbot                                  libuv
+clang-format                             libvirt
+cockroach                                llnode
+convox                                   logstash
+coq                                      mariadb
+corebird                                 mariadb@10.1
+couchdb                                  masscan
+cspice                                   mercurial
+dbxml                                    metricbeat
+deis                                     mikutter
+dependency-check                         mongodb
+dfix                                     mpdas
+direnv                                   mruby
+docker                                   neovim
+dos2unix                                 noti
+ejabberd                                 ntl
+elasticsearch                            numpy
+elvish                                   nzbget
+etcd                                     openrtsp
+exa                                      overmind
+exim                                     packetbeat
+exploitdb                                paket
+faac                                     pcre ✔
+fabio                                    pdns
+fibjs                                    pdnsrec
+filebeat                                 percona-server
+fio                                      percona-server-mongodb
+fluent-bit                               percona-toolkit
+folly                                    percona-xtrabackup
+fontconfig                               pgloader
+format-udf                               pixman
+freeipmi                                 ponyc
+freetds                                  pre-commit
+fwup                                     protobuf
+gcc@4.6                                  putty
+gcc@4.7                                  pv
+getdns                                   pyenv
+gimme                                    qbs
+gitbucket                                rbenv-bundler-ruby-version
+gitfs                                    remarshal
+gitg                                     rgbds
+github-markdown-toc                      saltstack
+gitless                                  saxon
+gnome-builder                            sleuthkit
+gnumeric                                 sshuttle
+gnutls                                   strongswan
+goffice                                  subversion
+golo                                     suricata
+googler                                  swiftformat
+gperftools                               sysbench
+gradle                                   terraform
+grafana                                  tippecanoe
+grakn                                    vagrant-completion
+graphicsmagick                           varnish@4
+gws                                      vim
+gx                                       wakatime-cli
+gx-go                                    webpack
+haproxy                                  wireguard-tools
+heroku                                   wxmac
+httrack                                  yadm
+hugo                                     yara
+hyper                                    yash
+irssi                                    yle-dl
+jhipster                                 you-get
+joe                                      youtube-dl
+jsdoc3                                   zookeeper
+kafka                                    zstd
+
+==> Installing dependencies for tesseract: libpng, libtiff, leptonica
+==> Installing tesseract dependency: libpng
+==> Downloading https://homebrew.bintray.com/bottles/libpng-1.6.30.sierra.bottle
+######################################################################## 100.0%
+==> Pouring libpng-1.6.30.sierra.bottle.tar.gz
+==> Using the sandbox
+🍺  /usr/local/Cellar/libpng/1.6.30: 26 files, 1.2MB
+==> Installing tesseract dependency: libtiff
+==> Downloading https://homebrew.bintray.com/bottles/libtiff-4.0.8_1.sierra.bott
+######################################################################## 100.0%
+==> Pouring libtiff-4.0.8_1.sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/libtiff/4.0.8_1: 245 files, 3.4MB
+==> Installing tesseract dependency: leptonica
+==> Downloading https://homebrew.bintray.com/bottles/leptonica-1.74.4.sierra.bot
+######################################################################## 100.0%
+==> Pouring leptonica-1.74.4.sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/leptonica/1.74.4: 52 files, 5.7MB
+==> Installing tesseract
+==> Downloading https://homebrew.bintray.com/bottles/tesseract-3.05.01.sierra.bo
+######################################################################## 100.0%
+==> Pouring tesseract-3.05.01.sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/tesseract/3.05.01: 79 files, 38.7MB
+dyn-160-39-135-68:~ kaitlincough$ pip install pytesseract
+Collecting pytesseract
+  Downloading pytesseract-0.1.7.tar.gz (150kB)
+    100% |████████████████████████████████| 153kB 1.1MB/s 
+Requirement already satisfied: Pillow in /usr/local/lib/python3.6/site-packages (from pytesseract)
+Requirement already satisfied: olefile in /usr/local/lib/python3.6/site-packages (from Pillow->pytesseract)
+Building wheels for collected packages: pytesseract
+  Running setup.py bdist_wheel for pytesseract ... done
+  Stored in directory: /Users/kaitlincough/Library/Caches/pip/wheels/ff/06/21/4b0d1e4d3e0e7a1c46c72a8a66a629473316f8e02614e9fdda
+Successfully built pytesseract
+Installing collected packages: pytesseract
+Successfully installed pytesseract-0.1.7
+dyn-160-39-135-68:~ kaitlincough$ brew install imagemagick
+==> Installing dependencies for imagemagick: libtool, freetype
+==> Installing imagemagick dependency: libtool
+==> Downloading https://homebrew.bintray.com/bottles/libtool-2.4.6_1.sierra.bott
+######################################################################## 100.0%
+==> Pouring libtool-2.4.6_1.sierra.bottle.tar.gz
+==> Using the sandbox
+==> Caveats
+In order to prevent conflicts with Apple's own libtool we have prepended a "g"
+so, you have instead: glibtool and glibtoolize.
+==> Summary
+🍺  /usr/local/Cellar/libtool/2.4.6_1: 70 files, 3.7MB
+==> Installing imagemagick dependency: freetype
+==> Downloading https://homebrew.bintray.com/bottles/freetype-2.8.sierra.bottle.
+######################################################################## 100.0%
+==> Pouring freetype-2.8.sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/freetype/2.8: 63 files, 2.6MB
+==> Installing imagemagick
+==> Downloading https://homebrew.bintray.com/bottles/imagemagick-7.0.6-0.sierra.
+######################################################################## 100.0%
+==> Pouring imagemagick-7.0.6-0.sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/imagemagick/7.0.6-0: 1,522 files, 22.4MB
+dyn-160-39-135-68:~ kaitlincough$ cd Documents
+dyn-160-39-135-68:Documents kaitlincough$ cd soma
+-bash: cd: soma: No such file or directory
+dyn-160-39-135-68:Documents kaitlincough$ cd Lede
+dyn-160-39-135-68:Lede kaitlincough$ cd soma
+dyn-160-39-135-68:soma kaitlincough$ cd 15-documents
+dyn-160-39-135-68:15-documents kaitlincough$ cd custodial-death-reports
+dyn-160-39-135-68:custodial-death-reports kaitlincough$ pdf2txt.pdf /Users/kaitlincough/Documents/Lede/soma/15-documents/custodial-death-reports/a2C31000001ujNKEAY.pdf
+-bash: pdf2txt.pdf: command not found
+dyn-160-39-135-68:custodial-death-reports kaitlincough$ pdf2txt /Users/kaitlincough/Documents/Lede/soma/15-documents/custodial-death-reports/a2C31000001ujNKEAY.pdf
+-bash: pdf2txt: command not found
+dyn-160-39-135-68:custodial-death-reports kaitlincough$ pdf2txt.py a2C31000001ujNKEAY.pdf
+env: python\r: No such file or directory
+dyn-160-39-135-68:custodial-death-reports kaitlincough$ brew install dos2unix
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> Updated Formulae
+ldc
+
+==> Downloading https://homebrew.bintray.com/bottles/dos2unix-7.3.5.sierra.bottl
+######################################################################## 100.0%
+==> Pouring dos2unix-7.3.5.sierra.bottle.tar.gz
+==> Using the sandbox
+🍺  /usr/local/Cellar/dos2unix/7.3.5: 24 files, 352.5KB
+dyn-160-39-135-68:custodial-death-reports kaitlincough$ pdf2txt.py a2C31000001ujNKEAY.pdf
+env: python\r: No such file or directory
+dyn-160-39-135-68:custodial-death-reports kaitlincough$ which pdf2txt.py
+/usr/local/bin/pdf2txt.py
+dyn-160-39-135-68:custodial-death-reports kaitlincough$ pdf2txt.py a2C31000001ujNKEAY.pdf
+env: python\r: No such file or directory
+dyn-160-39-135-68:custodial-death-reports kaitlincough$ dos2unix /usr/local/bin/pdf2txt.py
+dos2unix: converting file /usr/local/bin/pdf2txt.py to Unix format...
+dyn-160-39-135-68:custodial-death-reports kaitlincough$ pdf2txt.py a2C31000001ujNKEAY.pdf
+INFO:pdfminer.pdfdocument:xref found: pos=b'9041'
+INFO:pdfminer.pdfdocument:read_xref_from: start=9041, token=/b'xref'
+INFO:pdfminer.pdfdocument:xref objects: {1: (None, 885, 0), 2: (None, 8696, 0), 3: (None, 8609, 0), 4: (None, 15, 0), 5: (None, 8785, 0), 6: (None, 1056, 0), 7: (None, 1370, 0), 8: (None, 2277, 0), 9: (None, 2471, 0), 10: (None, 2693, 0), 11: (None, 3598, 0), 12: (None, 3794, 0), 13: (None, 4833, 0), 14: (None, 5006, 0), 15: (None, 6060, 0), 16: (None, 6233, 0), 17: (None, 6842, 0), 18: (None, 7038, 0), 19: (None, 8436, 0), 20: (None, 8876, 0), 21: (None, 8921, 0)}
+INFO:pdfminer.pdfdocument:trailer: {'Info': <PDFObjRef:21>, 'ID': [b'\x99n\x1bL\x08\xd4|\xe5\x8e\xd7gX6\xc1\x8aw', b"\xc2\xe8\x01\xad\x85\x03\x875%f\xb3Pl\xc3'\x8b"], 'Root': <PDFObjRef:20>, 'Size': 22}
+INFO:pdfminer.pdfdocument:trailer: {'Info': <PDFObjRef:21>, 'ID': [b'\x99n\x1bL\x08\xd4|\xe5\x8e\xd7gX6\xc1\x8aw', b"\xc2\xe8\x01\xad\x85\x03\x875%f\xb3Pl\xc3'\x8b"], 'Root': <PDFObjRef:20>, 'Size': 22}
+INFO:root:Pages: Kids=[<PDFObjRef:1>, <PDFObjRef:8>, <PDFObjRef:11>, <PDFObjRef:13>, <PDFObjRef:15>, <PDFObjRef:17>, <PDFObjRef:19>]
+INFO:root:Page: {'Contents': <PDFObjRef:4>, 'Type': /'Page', 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, 'Parent': <PDFObjRef:5>, 'MediaBox': [0, 0, 595.28, 841.88]}
+INFO:root:Processing page: <PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, MediaBox=[0, 0, 595.28, 841.88]>
+INFO:root:render_contents: resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, streams=[<PDFStream(4): raw=804, {'Filter': /'FlateDecode', 'Length': 803}>], ctm=(1, 0, 0, 1, 0, 0)
+INFO:root:get_font: create: objid=2, spec={'Subtype': /'Type1', 'Type': /'Font', 'BaseFont': /'Times-Roman', 'Encoding': /'WinAnsiEncoding'}
+INFO:root:get_font: create: objid=3, spec={'Subtype': /'Type1', 'Type': /'Font', 'BaseFont': /'Helvetica', 'Encoding': /'WinAnsiEncoding'}
+PA Number: PA06096C
+
+Status: Submitted
+
+Report Date: 5/30/2006 7:43 AM
+
+Agency/Facility Information
+
+Department ID: 3
+
+Department Type: POLICE
+
+Agency Name:
+
+Addison Police
+Dept.
+
+Agency Number: TX0570100
+
+Agency Phone: 9724507168
+
+Agency Address: P. O. Box 9010
+
+Agency City: Addison
+
+Agency State: TX
+
+Agency County: DALLAS
+
+Agency Zip: 75001
+
+Director Information
+
+Director Salutation:
+
+Chief
+
+Director First Name:
+
+Don
+
+Director Middle Name:
+
+Director Last Name:
+
+Franklin
+
+Reporter Name: Renee Gray
+
+Reporter Email:
+
+renee.gray@oag.state.tx.us
+
+Page 1 of 7
+
+INFO:root:Page: {'Contents': <PDFObjRef:7>, 'Type': /'Page', 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}, 'XObject': {'img0': <PDFObjRef:6>}}, 'Parent': <PDFObjRef:5>, 'MediaBox': [0, 0, 595.28, 841.88]}
+INFO:root:Processing page: <PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}, 'XObject': {'img0': <PDFObjRef:6>}}, MediaBox=[0, 0, 595.28, 841.88]>
+INFO:root:render_contents: resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}, 'XObject': {'img0': <PDFObjRef:6>}}, streams=[<PDFStream(7): raw=841, {'Filter': /'FlateDecode', 'Length': 840}>], ctm=(1, 0, 0, 1, 0, 0)
+INFO:root:Processing xobj: <PDFStream(6): raw=88, {'ColorSpace': [/'Indexed', /'DeviceRGB', 15, b'\xd7\xd7\xd7\xb0\xb0\xb0\x00\x00\x00\x0f\x0f\x0ffff\x1e\x1e\x1e000\xcc\xcc\xcc\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'], 'Mask': [8, 8], 'Subtype': /'Image', 'Height': 16, 'Filter': /'FlateDecode', 'Type': /'XObject', 'Width': 21, 'Length': 87, 'BitsPerComponent': 4}>
+
+Where did the event causing the death occur?
+
+Street Address: 4060 Beltline Rd.
+
+City: Addison
+
+County: Dallas
+
+What type of custody/facility was the Decedent in at the time of death:
+
+Type of Custody:
+
+Police Custody (pre-booking)
+
+Specific type of custody/facility:
+
+Specific Type of Custody/Facility:
+
+Custody of Peace Officer subsequent to arrest
+
+Custody Type Facility:
+
+What was the time and date of the deceased's entry into the law enforcement facility where the
+death occurred (mm/dd/yyyy hh:mm AM/PM):
+
+Entry Date Time:
+
+Entry Date Time N/A:
+
+Where did the death occur?
+
+Death Location: At medical facility
+
+Death Location Elsewhere:
+
+Page 2 of 7
+
+ 
+INFO:root:Page: {'Contents': <PDFObjRef:10>, 'Type': /'Page', 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}, 'XObject': {'img1': <PDFObjRef:9>}}, 'Parent': <PDFObjRef:5>, 'MediaBox': [0, 0, 595.28, 841.88]}
+INFO:root:Processing page: <PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}, 'XObject': {'img1': <PDFObjRef:9>}}, MediaBox=[0, 0, 595.28, 841.88]>
+INFO:root:render_contents: resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}, 'XObject': {'img1': <PDFObjRef:9>}}, streams=[<PDFStream(10): raw=838, {'Filter': /'FlateDecode', 'Length': 837}>], ctm=(1, 0, 0, 1, 0, 0)
+INFO:root:Processing xobj: <PDFStream(9): raw=33, {'ColorSpace': [/'Indexed', /'DeviceRGB', 3, b'\xcc\xcc\xcc\x00\x00\x00\x00\x00\x00\x00\x00\x00'], 'Mask': [1, 1], 'Subtype': /'Image', 'Height': 16, 'Filter': /'FlateDecode', 'Type': /'XObject', 'Width': 21, 'Length': 32, 'BitsPerComponent': 2}>
+
+Identity of Deceased
+
+First Name: Anthony
+
+Middle Name: George
+
+Last Name: Brown
+
+Suffix:
+
+Date of Birth: 1/3/1973
+
+Ethnicity: Anglo
+
+Sex: Male
+
+Date/Time of Death (mm/dd/yyyy hh:mm AM/PM):
+
+Death Date and Time: 5/7/2006 2:10 AM
+
+Age At Time Of Death: 33
+
+Date/Time of Custody (arrest, incarceration) (mm/dd/yyyy hh:mm AM/PM):
+
+Date/Time of Custody or Incident:
+
+5/7/2006 2:01 AM
+
+Custody Date NA:
+
+Has a medical examiner or coroner conducted an evaluation to determine a cause of death?
+
+Medical Examinor/Coroner Evalution?:
+
+Yes, results are available
+
+Page 3 of 7
+
+INFO:root:Page: {'Contents': <PDFObjRef:12>, 'Type': /'Page', 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, 'Parent': <PDFObjRef:5>, 'MediaBox': [0, 0, 595.28, 841.88]}
+INFO:root:Processing page: <PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, MediaBox=[0, 0, 595.28, 841.88]>
+INFO:root:render_contents: resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, streams=[<PDFStream(12): raw=972, {'Filter': /'FlateDecode', 'Length': 971}>], ctm=(1, 0, 0, 1, 0, 0)
+
+What was the manner of death? (select only one)
+
+Manner of Death:
+
+Alcohol/Drug Intoxication
+
+Manner of Death Description:
+
+Death Reason:
+
+Both medical condition and injuries
+
+Medical Cause of Death:
+
+Medical Cause of Death:
+
+Combined effects of cocaine, methamphetamine & ethanol, mechanical asphyxia, and physioological stress
+associated with struggle and restraint.
+
+Had the decedent been receiving treatment for the medical condition that caused the death
+after admission to your jail's jurisdiction?
+
+Medical Treatment:
+
+Not Applicable
+
+If death was an accident or homicide, who caused the death?
+
+Who caused the death?:
+
+Not applicable; cause of death was suicide, intoxication or illness/natural causes
+
+Death Causer Other:
+
+If a weapon caused the death, what type of weapon caused the death? (mark all that apply)
+
+Type of Death Weapon:
+
+Not Applicable
+
+Was the cause of death the result of a pre-existing medical condition or did the decedent
+develop the condition after admission?
+
+Pre existing medical condition?:
+
+Not Applicable; cause of death was accidental injury, intoxication, suicide or homicide
+
+Page 4 of 7
+
+INFO:root:Page: {'Contents': <PDFObjRef:14>, 'Type': /'Page', 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, 'Parent': <PDFObjRef:5>, 'MediaBox': [0, 0, 595.28, 841.88]}
+INFO:root:Processing page: <PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, MediaBox=[0, 0, 595.28, 841.88]>
+INFO:root:render_contents: resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, streams=[<PDFStream(14): raw=987, {'Filter': /'FlateDecode', 'Length': 986}>], ctm=(1, 0, 0, 1, 0, 0)
+
+If death was an accident, homicide or suicide, what was the means of death?
+
+Means of Death:
+
+Not applicable; cause of death was intoxication or illness/natural causes
+
+What were the most serious offense(s) with which the deceased was (or would have been)
+charged with at the time of death?
+
+Offense 1:
+
+Assault on Peace Officer
+
+Offense 2:
+
+Offense 3:
+
+Were the Charges::
+
+Not filed at time of death
+
+What were the types of charges or reason for contact?
+
+Type of Offense:
+
+Injuries of Decedent
+
+Injured By:
+
+Injured by Officer
+
+At any time during the arrest/incident did the deceased:
+
+Appear intoxicated (alcohol or
+drugs):
+
+Resist being handcuffed or
+arrested?:
+
+Grab, hit or fight with the
+officer(s):
+
+Yes
+
+Yes
+
+Threaten the officer(s)
+involved:
+
+No
+
+Try to escape/flee from
+custody:
+
+Yes
+
+Page 5 of 7
+
+ 
+INFO:root:Page: {'Contents': <PDFObjRef:16>, 'Type': /'Page', 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}, 'XObject': {'img1': <PDFObjRef:9>}}, 'Parent': <PDFObjRef:5>, 'MediaBox': [0, 0, 595.28, 841.88]}
+INFO:root:Processing page: <PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}, 'XObject': {'img1': <PDFObjRef:9>}}, MediaBox=[0, 0, 595.28, 841.88]>
+INFO:root:render_contents: resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}, 'XObject': {'img1': <PDFObjRef:9>}}, streams=[<PDFStream(16): raw=542, {'Filter': /'FlateDecode', 'Length': 541}>], ctm=(1, 0, 0, 1, 0, 0)
+INFO:root:Processing xobj: <PDFStream(9): raw=33, {'ColorSpace': [/'Indexed', /'DeviceRGB', 3, b'\xcc\xcc\xcc\x00\x00\x00\x00\x00\x00\x00\x00\x00'], 'Mask': [1, 1], 'Subtype': /'Image', 'Height': 16, 'Filter': /'FlateDecode', 'Type': /'XObject', 'Width': 21, 'Length': 32, 'BitsPerComponent': 2}>
+
+Other Behavior:
+
+Specify Other Behavior:
+
+Use weapon threaten/assault
+officer(s):
+
+0
+
+At the time of entry into the facility did the deceased:
+
+Entry Behavior: NA
+
+Was the deceased under restraint in the time leading up to the death or the events causing the
+death?
+
+Under Restraint:
+
+Yes
+
+Page 6 of 7
+
+INFO:root:Page: {'Contents': <PDFObjRef:18>, 'Type': /'Page', 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, 'Parent': <PDFObjRef:5>, 'MediaBox': [0, 0, 595.28, 841.88]}
+INFO:root:Processing page: <PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, MediaBox=[0, 0, 595.28, 841.88]>
+INFO:root:render_contents: resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, streams=[<PDFStream(18): raw=1330, {'Filter': /'FlateDecode', 'Length': 1329}>], ctm=(1, 0, 0, 1, 0, 0)
+
+Summary of How the Death Occurred: (max. 30,000 characters)
+
+Summary:
+
+On 5/07/2006, at approximately 02:01 hours, Officer Bagley was on routine patrol in the parking lot of 4060
+Beltline Rd, Papas Pizza.
+
+Officer Bagley observed a white male subject, later identified as Anthony Brown. Brown was approximately
+6'1" and 200 pounds and was wearing denim shorts and a sports jersey. Brown was speaking with two
+females and one male in the east side of the parking lot. Witnesses in the parking lot flagged Officer Bagley
+down and told him Brown had been inside the business acting weird and that guy is on something.
+
+Officer Bagley approached Brown and attempted to speak with him. Brown pushed Ofc. Bagley and ran yelling
+and screaming northbound toward Beltline Rd. Officer Bagley stated he caught Brown and Brown began to
+fight. Brown struck Officer Bagley several times and was able to get away. Officer Bagley caught Brown in the
+outside lane of Beltline Rd. And grabbed Brown around his chest and shoulder. Brown continued to fight
+Officer Bagley and began flailing around and screaming in an attempt to get away.
+
+Brown continued to struggle. Officer Bagley released his hold and radioed for assistance. Officer Bagley was
+able to regain control over Brown and was assisted by two citizens who had stopped to help. Brown continued
+to fight Officer Bagley and the two citizens.
+
+Officer Barnett arrived at 02:03:54 hours to assist and Officer Krause arrived at 02:05:39. Officer Bagley
+notified dispatch at 02:06:41 that Brown was now in custody. Officer Hardin arrived at 02:06:59 to assist. Once
+on scene, Officer Hardin requested another unit and Addison Paramedics because Brown continued to
+struggle. Sgt. Gilbert arrived at 02:09:27 to assist and Officer Allen arrived at 02:12 to assist.
+
+Addison Medic 102 and Engine 102 were notified at 02:07:23 and arrived at 02:11:10 hours. Brown was
+evaluated by emergency personnel who determine Brown was in medical distress. Brown was transported to
+RHD Hospital where doctors pronounced him deceased.
+
+Page 7 of 7
+
+
+dyn-160-39-135-68:custodial-death-reports kaitlincough$ pdf2txt.py a2C31000001ujNKEAY.pdf -o output.txt
+INFO:pdfminer.pdfdocument:xref found: pos=b'9041'
+INFO:pdfminer.pdfdocument:read_xref_from: start=9041, token=/b'xref'
+INFO:pdfminer.pdfdocument:xref objects: {1: (None, 885, 0), 2: (None, 8696, 0), 3: (None, 8609, 0), 4: (None, 15, 0), 5: (None, 8785, 0), 6: (None, 1056, 0), 7: (None, 1370, 0), 8: (None, 2277, 0), 9: (None, 2471, 0), 10: (None, 2693, 0), 11: (None, 3598, 0), 12: (None, 3794, 0), 13: (None, 4833, 0), 14: (None, 5006, 0), 15: (None, 6060, 0), 16: (None, 6233, 0), 17: (None, 6842, 0), 18: (None, 7038, 0), 19: (None, 8436, 0), 20: (None, 8876, 0), 21: (None, 8921, 0)}
+INFO:pdfminer.pdfdocument:trailer: {'Info': <PDFObjRef:21>, 'ID': [b'\x99n\x1bL\x08\xd4|\xe5\x8e\xd7gX6\xc1\x8aw', b"\xc2\xe8\x01\xad\x85\x03\x875%f\xb3Pl\xc3'\x8b"], 'Root': <PDFObjRef:20>, 'Size': 22}
+INFO:pdfminer.pdfdocument:trailer: {'Info': <PDFObjRef:21>, 'ID': [b'\x99n\x1bL\x08\xd4|\xe5\x8e\xd7gX6\xc1\x8aw', b"\xc2\xe8\x01\xad\x85\x03\x875%f\xb3Pl\xc3'\x8b"], 'Root': <PDFObjRef:20>, 'Size': 22}
+INFO:root:Pages: Kids=[<PDFObjRef:1>, <PDFObjRef:8>, <PDFObjRef:11>, <PDFObjRef:13>, <PDFObjRef:15>, <PDFObjRef:17>, <PDFObjRef:19>]
+INFO:root:Page: {'Contents': <PDFObjRef:4>, 'Type': /'Page', 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, 'Parent': <PDFObjRef:5>, 'MediaBox': [0, 0, 595.28, 841.88]}
+INFO:root:Processing page: <PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, MediaBox=[0, 0, 595.28, 841.88]>
+INFO:root:render_contents: resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, streams=[<PDFStream(4): raw=804, {'Filter': /'FlateDecode', 'Length': 803}>], ctm=(1, 0, 0, 1, 0, 0)
+INFO:root:get_font: create: objid=2, spec={'Subtype': /'Type1', 'Type': /'Font', 'BaseFont': /'Times-Roman', 'Encoding': /'WinAnsiEncoding'}
+INFO:root:get_font: create: objid=3, spec={'Subtype': /'Type1', 'Type': /'Font', 'BaseFont': /'Helvetica', 'Encoding': /'WinAnsiEncoding'}
+INFO:root:Page: {'Contents': <PDFObjRef:7>, 'Type': /'Page', 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}, 'XObject': {'img0': <PDFObjRef:6>}}, 'Parent': <PDFObjRef:5>, 'MediaBox': [0, 0, 595.28, 841.88]}
+INFO:root:Processing page: <PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}, 'XObject': {'img0': <PDFObjRef:6>}}, MediaBox=[0, 0, 595.28, 841.88]>
+INFO:root:render_contents: resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}, 'XObject': {'img0': <PDFObjRef:6>}}, streams=[<PDFStream(7): raw=841, {'Filter': /'FlateDecode', 'Length': 840}>], ctm=(1, 0, 0, 1, 0, 0)
+INFO:root:Processing xobj: <PDFStream(6): raw=88, {'ColorSpace': [/'Indexed', /'DeviceRGB', 15, b'\xd7\xd7\xd7\xb0\xb0\xb0\x00\x00\x00\x0f\x0f\x0ffff\x1e\x1e\x1e000\xcc\xcc\xcc\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'], 'Mask': [8, 8], 'Subtype': /'Image', 'Height': 16, 'Filter': /'FlateDecode', 'Type': /'XObject', 'Width': 21, 'Length': 87, 'BitsPerComponent': 4}>
+INFO:root:Page: {'Contents': <PDFObjRef:10>, 'Type': /'Page', 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}, 'XObject': {'img1': <PDFObjRef:9>}}, 'Parent': <PDFObjRef:5>, 'MediaBox': [0, 0, 595.28, 841.88]}
+INFO:root:Processing page: <PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}, 'XObject': {'img1': <PDFObjRef:9>}}, MediaBox=[0, 0, 595.28, 841.88]>
+INFO:root:render_contents: resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}, 'XObject': {'img1': <PDFObjRef:9>}}, streams=[<PDFStream(10): raw=838, {'Filter': /'FlateDecode', 'Length': 837}>], ctm=(1, 0, 0, 1, 0, 0)
+INFO:root:Processing xobj: <PDFStream(9): raw=33, {'ColorSpace': [/'Indexed', /'DeviceRGB', 3, b'\xcc\xcc\xcc\x00\x00\x00\x00\x00\x00\x00\x00\x00'], 'Mask': [1, 1], 'Subtype': /'Image', 'Height': 16, 'Filter': /'FlateDecode', 'Type': /'XObject', 'Width': 21, 'Length': 32, 'BitsPerComponent': 2}>
+INFO:root:Page: {'Contents': <PDFObjRef:12>, 'Type': /'Page', 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, 'Parent': <PDFObjRef:5>, 'MediaBox': [0, 0, 595.28, 841.88]}
+INFO:root:Processing page: <PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, MediaBox=[0, 0, 595.28, 841.88]>
+INFO:root:render_contents: resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, streams=[<PDFStream(12): raw=972, {'Filter': /'FlateDecode', 'Length': 971}>], ctm=(1, 0, 0, 1, 0, 0)
+INFO:root:Page: {'Contents': <PDFObjRef:14>, 'Type': /'Page', 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, 'Parent': <PDFObjRef:5>, 'MediaBox': [0, 0, 595.28, 841.88]}
+INFO:root:Processing page: <PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, MediaBox=[0, 0, 595.28, 841.88]>
+INFO:root:render_contents: resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, streams=[<PDFStream(14): raw=987, {'Filter': /'FlateDecode', 'Length': 986}>], ctm=(1, 0, 0, 1, 0, 0)
+INFO:root:Page: {'Contents': <PDFObjRef:16>, 'Type': /'Page', 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}, 'XObject': {'img1': <PDFObjRef:9>}}, 'Parent': <PDFObjRef:5>, 'MediaBox': [0, 0, 595.28, 841.88]}
+INFO:root:Processing page: <PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}, 'XObject': {'img1': <PDFObjRef:9>}}, MediaBox=[0, 0, 595.28, 841.88]>
+INFO:root:render_contents: resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}, 'XObject': {'img1': <PDFObjRef:9>}}, streams=[<PDFStream(16): raw=542, {'Filter': /'FlateDecode', 'Length': 541}>], ctm=(1, 0, 0, 1, 0, 0)
+INFO:root:Processing xobj: <PDFStream(9): raw=33, {'ColorSpace': [/'Indexed', /'DeviceRGB', 3, b'\xcc\xcc\xcc\x00\x00\x00\x00\x00\x00\x00\x00\x00'], 'Mask': [1, 1], 'Subtype': /'Image', 'Height': 16, 'Filter': /'FlateDecode', 'Type': /'XObject', 'Width': 21, 'Length': 32, 'BitsPerComponent': 2}>
+INFO:root:Page: {'Contents': <PDFObjRef:18>, 'Type': /'Page', 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, 'Parent': <PDFObjRef:5>, 'MediaBox': [0, 0, 595.28, 841.88]}
+INFO:root:Processing page: <PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, MediaBox=[0, 0, 595.28, 841.88]>
+INFO:root:render_contents: resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'F1': <PDFObjRef:2>, 'F2': <PDFObjRef:3>}}, streams=[<PDFStream(18): raw=1330, {'Filter': /'FlateDecode', 'Length': 1329}>], ctm=(1, 0, 0, 1, 0, 0)
+dyn-160-39-135-68:custodial-death-reports kaitlincough$ pdf2txt.py /Users/kaitlincough/Documents/Lede/soma/15-documents/seattle/15-32587_Redacted-page8.pdf
+INFO:pdfminer.pdfdocument:xref found: pos=b'162248'
+INFO:pdfminer.pdfdocument:read_xref_from: start=162248, token=/b'xref'
+INFO:pdfminer.pdfdocument:xref objects: {1: (None, 162073, 0), 2: (None, 6980, 0), 3: (None, 138825, 0), 4: (None, 22, 0), 5: (None, 6960, 0), 6: (None, 7084, 0), 7: (None, 79334, 0), 8: (None, 135275, 0), 9: (None, 8014, 0), 10: (None, 28379, 0), 11: (None, 28401, 0), 12: (None, 79312, 0), 13: (None, 7250, 0), 14: (None, 7994, 0), 15: (None, 138958, 0), 16: (None, 157987, 0), 17: (None, 138788, 0), 18: (None, 135296, 0), 19: (None, 138767, 0), 20: (None, 138908, 0), 21: (None, 139729, 0), 22: (None, 139979, 0), 23: (None, 157965, 0), 24: (None, 158470, 0), 25: (None, 158152, 0), 26: (None, 158450, 0), 27: (None, 158719, 0), 28: (None, 161802, 0), 29: (None, 161823, 0), 30: (None, 161859, 0), 31: (None, 161912, 0), 32: (None, 161944, 0), 33: (None, 161963, 0), 34: (None, 161989, 0), 35: (None, 162031, 0), 36: (None, 162050, 0)}
+INFO:pdfminer.pdfdocument:trailer: {'Size': 37, 'Root': <PDFObjRef:20>, 'Info': <PDFObjRef:1>, 'ID': [b'<#7I:\xe6\xc73\xddw)\xba\x1fw4\xa5', b'<#7I:\xe6\xc73\xddw)\xba\x1fw4\xa5']}
+INFO:pdfminer.pdfdocument:trailer: {'Size': 37, 'Root': <PDFObjRef:20>, 'Info': <PDFObjRef:1>, 'ID': [b'<#7I:\xe6\xc73\xddw)\xba\x1fw4\xa5', b'<#7I:\xe6\xc73\xddw)\xba\x1fw4\xa5']}
+INFO:root:Pages: Kids=[<PDFObjRef:2>]
+INFO:root:Page: {'Type': /'Page', 'Parent': <PDFObjRef:3>, 'Resources': <PDFObjRef:6>, 'Contents': <PDFObjRef:4>, 'MediaBox': [0, 0, 612, 792]}
+INFO:root:Processing page: <PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'TT1': <PDFObjRef:15>, 'TT2': <PDFObjRef:16>}, 'XObject': {'Im4': <PDFObjRef:13>, 'Im2': <PDFObjRef:9>, 'Im3': <PDFObjRef:11>, 'Im1': <PDFObjRef:7>}}, MediaBox=[0, 0, 612, 792]>
+INFO:root:render_contents: resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'TT1': <PDFObjRef:15>, 'TT2': <PDFObjRef:16>}, 'XObject': {'Im4': <PDFObjRef:13>, 'Im2': <PDFObjRef:9>, 'Im3': <PDFObjRef:11>, 'Im1': <PDFObjRef:7>}}, streams=[<PDFStream(4): raw=6865, {'Length': <PDFObjRef:5>, 'Filter': /'FlateDecode'}>], ctm=(1, 0, 0, 1, 0, 0)
+INFO:root:get_font: create: objid=15, spec={'Type': /'Font', 'Subtype': /'TrueType', 'BaseFont': /'CRNYFF+Helvetica', 'FontDescriptor': <PDFObjRef:21>, 'Encoding': /'MacRomanEncoding', 'FirstChar': 32, 'LastChar': 236, 'Widths': [278, 278, 0, 556, 0, 0, 0, 191, 333, 333, 0, 0, 278, 333, 278, 278, 556, 556, 556, 556, 556, 556, 556, 556, 556, 556, 278, 278, 584, 0, 0, 556, 1015, 667, 667, 722, 722, 667, 611, 778, 722, 278, 500, 0, 556, 833, 722, 778, 667, 0, 722, 667, 611, 722, 667, 944, 667, 667, 0, 278, 0, 0, 0, 0, 0, 556, 556, 500, 556, 556, 278, 556, 556, 222, 222, 500, 222, 833, 556, 556, 556, 556, 333, 500, 278, 556, 500, 722, 500, 500, 500, 334, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 556, 0, 0, 556, 500, 0, 0, 556, 0, 278, 278, 0, 278, 0, 556, 0, 0, 0, 0, 556, 556, 556, 556, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 889, 0, 611, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 667, 0, 0, 0, 667, 0, 0, 278]}
+INFO:root:get_font: create: objid=16, spec={'Type': /'Font', 'Subtype': /'TrueType', 'BaseFont': /'TSWVLH+Helvetica', 'FontDescriptor': <PDFObjRef:24>, 'ToUnicode': <PDFObjRef:25>, 'FirstChar': 33, 'LastChar': 33, 'Widths': [744]}
+INFO:root:Processing xobj: <PDFStream(7): raw=55757, {'Length': <PDFObjRef:8>, 'Type': /'XObject', 'Subtype': /'Image', 'Width': 1275, 'Height': 1650, 'Interpolate': True, 'ColorSpace': <PDFObjRef:17>, 'BitsPerComponent': 8, 'Filter': /'DCTDecode'}>
+INFO:root:Processing xobj: <PDFStream(9): raw=20181, {'Length': <PDFObjRef:10>, 'Type': /'XObject', 'Subtype': /'Image', 'Width': 2216, 'Height': 3048, 'ImageMask': True, 'Interpolate': True, 'BitsPerComponent': 1, 'Filter': /'FlateDecode'}>
+INFO:root:Processing xobj: <PDFStream(11): raw=50726, {'Length': <PDFObjRef:12>, 'Type': /'XObject', 'Subtype': /'Image', 'Width': 1440, 'Height': 1816, 'ImageMask': True, 'Interpolate': True, 'BitsPerComponent': 1, 'Filter': /'FlateDecode'}>
+INFO:root:Processing xobj: <PDFStream(13): raw=562, {'Length': <PDFObjRef:14>, 'Type': /'XObject', 'Subtype': /'Image', 'Width': 704, 'Height': 92, 'ImageMask': True, 'Interpolate': True, 'BitsPerComponent': 1, 'Filter': /'FlateDecode'}>
+SEATTLE POLICE DEPAR'l'MllN't'
+
+GENERAL  OFFENSE HARDCOPY
+PUBLIC  DISCLOSURE RELEASE  COPY
+
+7 399.0 SUSPICIOUS  CIRCUMSTANCE
+
+GO# 2015-32587  OPEN
+
+Related Image - OTHER
+Attachment  Description:
+Reference  Number:
+
+@ SEATTLE
+
+POLIGE
+DEPARTMENT
+
+sraremeur  FoRlt,
+
+15-032587
+
+-flm:
+2:40  p.nr.
+
+0¿t9:
+t/29/ t5
+Sbt€m.nt ot
+Nsms (Lr6l,  Firsl  Ml)
+Sgt. RM. Long #6123  / Unit Illl2A
+Sl¡hmsntfak6n  8y:
+
+E wtness
+
+Tr.nscrlbed  W (Tapodff r€n!l.lod  Sblêmnts)
+
+Pl66
+Seattle, WA
+
+VlclIm
+
+Omcêr
+
+Oth6r:
+
+sst¡t
+
+sodål
+
+DOB
+
+Unli
+
+tlnll
+
+Oll/29/15,  I was on-duty as a supervisor  fpr a squad  ofunilomed  Seattle Police  bicycle ofÏicers in the downtown
+business district. I attcndod  a briefing  at 5:30  a.m.  for o noreotics  opcration  with the Major  Crimes  Task  Forcc  (MCTF),
+working  in conjunction with  porsonncl  from the Fcdcral  Bureau  of Investigation (FBI).  My role was to supervise  thc
+othcr bicyclc olÏcers, un<l  lo particípntc  in thcir tìruction  {s contact  índ ¡sscuc lonns for tlto undcrcovor  opcralion in
+whiçholiccrswouldattctnptfopurchnscclnrgs.  Tlrclnrgot  srcûeÈnlcrcdonthcl500  l¡lockof3dAvcnuó,  Othcr
+
+prolong the duration ofth€  investigâtion  and to maximize  its effætiveness,  offcors would ulilizo  a ruse to contnct lhc
+iuspect¡s) and obtain  or verif, his or her identity for future  pnrseoutiotr.  I deployed  with Ofücer T. Bums l/543E, while
+Officers  Bowfing  #56  I 7 rnd Lim  #6685  deployed  as the other teom'
+lluy#4of8
+
+Ât about  8:0? t.m., Officer  Bums and  I cont¿cted a suspect  who  bad  comploted  a salo ofsuspected  narcot¡as to an
+undercover  ofliccr. He  was dçscrib€d  as a blaok  nhle wearing  a blaok cort (hood  up),  blue  jeans,  red  shoes,  with white
+hoadphone wires  protrudíng.from-the  hood  antl curying a brown pupcr bag, We wcro told that  the  suspect  wes walkíng
+w€st;ound  on thinorth sidewalk of Pike  St (lïom 3'd Avenue).  As hck wotlld have it, Officsr  Burns  and l were
+The
+stoppedintheparkinggarageonthenorthsìdeoftho200blwkofPikeSl,andthesuspectcamerighttous. 
+desiiiption was thorough and he was the only  person  who  matohcd  it.
+
+Observers  confirmed via radio  that  wc had contacted  the conæt  percon, Officet  Burns  took the  lead in the contsct.  The
+mrleirlentifiedhimselfosWesleyJM¡fcholl  bom6/2ó185, OfficerBurnsaskedquestionstoconfimthcidentification,
+while  I submitted his name for a¡ electronic  dalâbase  query,  In addition to tho similùity  of physical  description  listed
+on computer  cntries,  Mr. Mitchell confirmed his DOC number when  I askcd hitn. Fufher, I was  able to look at o
+previous  booking photo  of Mr. Mitchell and vorify  his identi(y,
+
+The contact lasted only a few minuies and he wos released  without incident' Upon roturning to tlie precinct, I viewed  a
+DoL photo  depicting  Mr Mitohell,  whioh [urther  verifierl his identity
+
+Forú  927 n6t 11107
+
+X
+
+2
+
+Psgt  I of I
+
+For: 6569 Printed On: May-26-2015 (Tue.)
+
+Page 8 of23
+
+
+dyn-160-39-135-68:custodial-death-reports kaitlincough$ pdf2txt.py /Users/kaitlincough/Documents/Lede/soma/15-documents/seattle/15-32587_Redacted-page8.pdf -o page8.txt
+INFO:pdfminer.pdfdocument:xref found: pos=b'162248'
+INFO:pdfminer.pdfdocument:read_xref_from: start=162248, token=/b'xref'
+INFO:pdfminer.pdfdocument:xref objects: {1: (None, 162073, 0), 2: (None, 6980, 0), 3: (None, 138825, 0), 4: (None, 22, 0), 5: (None, 6960, 0), 6: (None, 7084, 0), 7: (None, 79334, 0), 8: (None, 135275, 0), 9: (None, 8014, 0), 10: (None, 28379, 0), 11: (None, 28401, 0), 12: (None, 79312, 0), 13: (None, 7250, 0), 14: (None, 7994, 0), 15: (None, 138958, 0), 16: (None, 157987, 0), 17: (None, 138788, 0), 18: (None, 135296, 0), 19: (None, 138767, 0), 20: (None, 138908, 0), 21: (None, 139729, 0), 22: (None, 139979, 0), 23: (None, 157965, 0), 24: (None, 158470, 0), 25: (None, 158152, 0), 26: (None, 158450, 0), 27: (None, 158719, 0), 28: (None, 161802, 0), 29: (None, 161823, 0), 30: (None, 161859, 0), 31: (None, 161912, 0), 32: (None, 161944, 0), 33: (None, 161963, 0), 34: (None, 161989, 0), 35: (None, 162031, 0), 36: (None, 162050, 0)}
+INFO:pdfminer.pdfdocument:trailer: {'Size': 37, 'Root': <PDFObjRef:20>, 'Info': <PDFObjRef:1>, 'ID': [b'<#7I:\xe6\xc73\xddw)\xba\x1fw4\xa5', b'<#7I:\xe6\xc73\xddw)\xba\x1fw4\xa5']}
+INFO:pdfminer.pdfdocument:trailer: {'Size': 37, 'Root': <PDFObjRef:20>, 'Info': <PDFObjRef:1>, 'ID': [b'<#7I:\xe6\xc73\xddw)\xba\x1fw4\xa5', b'<#7I:\xe6\xc73\xddw)\xba\x1fw4\xa5']}
+INFO:root:Pages: Kids=[<PDFObjRef:2>]
+INFO:root:Page: {'Type': /'Page', 'Parent': <PDFObjRef:3>, 'Resources': <PDFObjRef:6>, 'Contents': <PDFObjRef:4>, 'MediaBox': [0, 0, 612, 792]}
+INFO:root:Processing page: <PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'TT1': <PDFObjRef:15>, 'TT2': <PDFObjRef:16>}, 'XObject': {'Im4': <PDFObjRef:13>, 'Im2': <PDFObjRef:9>, 'Im3': <PDFObjRef:11>, 'Im1': <PDFObjRef:7>}}, MediaBox=[0, 0, 612, 792]>
+INFO:root:render_contents: resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Font': {'TT1': <PDFObjRef:15>, 'TT2': <PDFObjRef:16>}, 'XObject': {'Im4': <PDFObjRef:13>, 'Im2': <PDFObjRef:9>, 'Im3': <PDFObjRef:11>, 'Im1': <PDFObjRef:7>}}, streams=[<PDFStream(4): raw=6865, {'Length': <PDFObjRef:5>, 'Filter': /'FlateDecode'}>], ctm=(1, 0, 0, 1, 0, 0)
+INFO:root:get_font: create: objid=15, spec={'Type': /'Font', 'Subtype': /'TrueType', 'BaseFont': /'CRNYFF+Helvetica', 'FontDescriptor': <PDFObjRef:21>, 'Encoding': /'MacRomanEncoding', 'FirstChar': 32, 'LastChar': 236, 'Widths': [278, 278, 0, 556, 0, 0, 0, 191, 333, 333, 0, 0, 278, 333, 278, 278, 556, 556, 556, 556, 556, 556, 556, 556, 556, 556, 278, 278, 584, 0, 0, 556, 1015, 667, 667, 722, 722, 667, 611, 778, 722, 278, 500, 0, 556, 833, 722, 778, 667, 0, 722, 667, 611, 722, 667, 944, 667, 667, 0, 278, 0, 0, 0, 0, 0, 556, 556, 500, 556, 556, 278, 556, 556, 222, 222, 500, 222, 833, 556, 556, 556, 556, 333, 500, 278, 556, 500, 722, 500, 500, 500, 334, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 556, 0, 0, 556, 500, 0, 0, 556, 0, 278, 278, 0, 278, 0, 556, 0, 0, 0, 0, 556, 556, 556, 556, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 889, 0, 611, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 667, 0, 0, 0, 667, 0, 0, 278]}
+INFO:root:get_font: create: objid=16, spec={'Type': /'Font', 'Subtype': /'TrueType', 'BaseFont': /'TSWVLH+Helvetica', 'FontDescriptor': <PDFObjRef:24>, 'ToUnicode': <PDFObjRef:25>, 'FirstChar': 33, 'LastChar': 33, 'Widths': [744]}
+INFO:root:Processing xobj: <PDFStream(7): raw=55757, {'Length': <PDFObjRef:8>, 'Type': /'XObject', 'Subtype': /'Image', 'Width': 1275, 'Height': 1650, 'Interpolate': True, 'ColorSpace': <PDFObjRef:17>, 'BitsPerComponent': 8, 'Filter': /'DCTDecode'}>
+INFO:root:Processing xobj: <PDFStream(9): raw=20181, {'Length': <PDFObjRef:10>, 'Type': /'XObject', 'Subtype': /'Image', 'Width': 2216, 'Height': 3048, 'ImageMask': True, 'Interpolate': True, 'BitsPerComponent': 1, 'Filter': /'FlateDecode'}>
+INFO:root:Processing xobj: <PDFStream(11): raw=50726, {'Length': <PDFObjRef:12>, 'Type': /'XObject', 'Subtype': /'Image', 'Width': 1440, 'Height': 1816, 'ImageMask': True, 'Interpolate': True, 'BitsPerComponent': 1, 'Filter': /'FlateDecode'}>
+INFO:root:Processing xobj: <PDFStream(13): raw=562, {'Length': <PDFObjRef:14>, 'Type': /'XObject', 'Subtype': /'Image', 'Width': 704, 'Height': 92, 'ImageMask': True, 'Interpolate': True, 'BitsPerComponent': 1, 'Filter': /'FlateDecode'}>
+dyn-160-39-135-68:custodial-death-reports kaitlincough$ cd Documents
+-bash: cd: Documents: No such file or directory
+dyn-160-39-135-68:custodial-death-reports kaitlincough$ cd ..
+dyn-160-39-135-68:15-documents kaitlincough$ cd seattle
+dyn-160-39-135-68:seattle kaitlincough$ tesseract 15-32587_Redacted-page8.pdf 
+Usage:
+  tesseract --help | --help-psm | --help-oem | --version
+  tesseract --list-langs [--tessdata-dir PATH]
+  tesseract --print-parameters [options...] [configfile...]
+  tesseract imagename|stdin outputbase|stdout [options...] [configfile...]
+
+OCR options:
+  --tessdata-dir PATH   Specify the location of tessdata path.
+  --user-words PATH     Specify the location of user words file.
+  --user-patterns PATH  Specify the location of user patterns file.
+  -l LANG[+LANG]        Specify language(s) used for OCR.
+  -c VAR=VALUE          Set value for config variables.
+                        Multiple -c arguments are allowed.
+  --psm NUM             Specify page segmentation mode.
+  --oem NUM             Specify OCR Engine mode.
+NOTE: These options must occur before any configfile.
+
+Page segmentation modes:
+  0    Orientation and script detection (OSD) only.
+  1    Automatic page segmentation with OSD.
+  2    Automatic page segmentation, but no OSD, or OCR.
+  3    Fully automatic page segmentation, but no OSD. (Default)
+  4    Assume a single column of text of variable sizes.
+  5    Assume a single uniform block of vertically aligned text.
+  6    Assume a single uniform block of text.
+  7    Treat the image as a single text line.
+  8    Treat the image as a single word.
+  9    Treat the image as a single word in a circle.
+ 10    Treat the image as a single character.
+ 11    Sparse text. Find as much text as possible in no particular order.
+ 12    Sparse text with OSD.
+ 13    Raw line. Treat the image as a single text line,
+			bypassing hacks that are Tesseract-specific.
+OCR Engine modes:
+  0    Original Tesseract only.
+  1    Cube only.
+  2    Tesseract + cube.
+  3    Default, based on what is available.
+
+Single options:
+  -h, --help            Show this help message.
+  --help-psm            Show page segmentation modes.
+  --help-oem            Show OCR Engine modes.
+  -v, --version         Show version information.
+  --list-langs          List available languages for tesseract engine.
+  --print-parameters    Print tesseract parameters to stdout.
+dyn-160-39-135-68:seattle kaitlincough$ tesseract 15-32587_Redacted-page8.pdf stdout
+Error in pixReadStream: Pdf reading is not supported
+Error in pixRead: pix not read
+Error during processing.
+dyn-160-39-135-68:seattle kaitlincough$ tesseract 15-32587_Redacted-page8.pdf stdout
+Error in pixReadStream: Pdf reading is not supported
+Error in pixRead: pix not read
+Error during processing.
+dyn-160-39-135-68:seattle kaitlincough$ convert 15-32587_Redacted-page8.pdf page8.png
+convert: no images defined `page8.png' @ error/convert.c/ConvertImageCommand/3254.
+dyn-160-39-135-68:seattle kaitlincough$ identify 15-32587_Redacted-page8.pdf 
+dyn-160-39-135-68:seattle kaitlincough$ brew install ghostscript
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> Updated Formulae
+bitrise
+
+==> Installing dependencies for ghostscript: little-cms2
+==> Installing ghostscript dependency: little-cms2
+==> Downloading https://homebrew.bintray.com/bottles/little-cms2-2.8.sierra.bott
+######################################################################## 100.0%
+==> Pouring little-cms2-2.8.sierra.bottle.tar.gz
+==> Using the sandbox
+🍺  /usr/local/Cellar/little-cms2/2.8: 17 files, 1MB
+==> Installing ghostscript
+==> Downloading https://homebrew.bintray.com/bottles/ghostscript-9.21_2.sierra.b
+######################################################################## 100.0%
+==> Pouring ghostscript-9.21_2.sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/ghostscript/9.21_2: 717 files, 64MB
+dyn-160-39-135-68:seattle kaitlincough$ convert 15-32587_Redacted-page8.pdf page8.png
+dyn-160-39-135-68:seattle kaitlincough$ 
+dyn-160-39-135-68:seattle kaitlincough$ convert convert 15-32587_Redacted-page8.pdf page8.png
+convert: unable to open image 'convert': No such file or directory @ error/blob.c/OpenBlob/3093.
+convert: no decode delegate for this image format `' @ error/constitute.c/ReadImage/509.
+dyn-160-39-135-68:seattle kaitlincough$ convert 15-32587_Redacted-page.pdf page8.png
+convert: unable to open image '15-32587_Redacted-page.pdf': No such file or directory @ error/blob.c/OpenBlob/3093.
+convert: no images defined `page8.png' @ error/convert.c/ConvertImageCommand/3254.
+dyn-160-39-135-68:seattle kaitlincough$ tesseract page8.png stdout
+Warning. Invalid resolution 0 dpi. Using 70 instead.
+ 
+
+SEATTLE POLICE DEIARTMENT
+
+ccnmn mamas: HARDCOYY
+runlcmscwwkl mum con
+umsumcms ummnm
+
+.01
+
+Auldunan mnpxm
+Mavens: Numm
+
+srAWrK-am
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ﬁﬁﬂﬁhm‘u.—Tu::_mwr~ww
+F"“._.. '2‘.“ “mmmmx Tﬁfm‘“ mrmﬂ ..
+:mﬂhuﬁhmﬂ:umrv .._‘ u... ......
+“MM... mmmmw p. mm“ vW-‘mm—v mm. m
+..M.4..m..n.nmm.m.m
+
+mm. ?F'EJ‘ m" \L—mﬂ‘ﬂﬂ" Kl"“:._“‘“.?.n
+7...“..‘12mm mm? ”'5“ 3' ".11“le .u"""'
+Www‘uw» .ﬂ...mmw.m,...m.,.‘_wm ‘-
+mmmmmmmmmmwu
+
+mmsngm w...'&.:':mx mlznﬁwﬂ.<.m‘mm
+mm»;-Mm-hr:-*-:.Lzm’:~m<~:mrw
+.w__.,.....m.“..m~..m, ‘
+
+M m.ngm w W V .
+
+x EWL,
+
+ 
+
+mum mum“ M-y mm: mm; mum:
+
+ 
+
+dyn-160-39-135-68:seattle kaitlincough$ convert -density 300 15-32587_Redacted-page8.pdf page8.png
+dyn-160-39-135-68:seattle kaitlincough$ tesseract page8.png stdout
+Warning. Invalid resolution 0 dpi. Using 70 instead.
+SEATTLE POLICE DEPARTMENT
+
+GENERAL OFFENSE HARDCOPY
+PUBLIC DISCLOSURE RELEASE COPY
+
+GO# 2015-32587 OPEN 7399-0 SUSPICIOUS CIRCUMSTANCE
+
+Related Ima e - OTHER
+
+Attachment Description:
+Reference Number:
+
+ormnn'b'liluu l
+
+r SEATTLE STA TEMEN T FORM
+0 pouce 15-032587
+
+DEPARTMENT ‘ﬂtuusﬁwmi
+
+DalF—' Tlme: ' ' EB?- ‘ 7'
+
+l/29/l5 2:40 pm. Seattle, WA
+
+Statement or E Complainant El Wltness D Vlcllm é omcer C] Other:
+NET"! (Lﬂll. Filli MI) >‘ 7. N A - - - A —' “A 7 7 l --
+
+Sgt. RM. Long #6123 /Unit B] 12A
+‘suuiamenl‘raken ay: * V V 7 serial
+
+ 
+
+ 
+
+Transcribed by (Tapedmanllaled Statements) Serial
+
+ 
+
+ 
+
+On 1/29/ 15, l was on—duty us a supervisor for a squad ofuniformed Seattle Police bicycle ofﬁcers in the downtown
+business district. I attended a brieﬁng all 5:30 am. for a narcotics operation with the Major Crimes Task Force (MCTF),
+working in conjunction with personnel from the Federal Bureau of Investigation (FBI). My role was to supervise the
+other bicycle ofﬁcers, and lo parlicipalc in their function as contact and rescue tennis for tho undercover operation in
+which oﬁiccrs would attempt to purchase drugs. The target urcu centered on the 1500 block of 3'“ Avenue. Other
+personnel were assigned to monitor the activities and progress of the actual UC deployment. while the unifonncd
+bicycle ofﬁcers would wait a distance uwny, so as not to be seen by the potential offenders. Alter an undercover
+purchase of narcotics, those monitoring the progress would keep the bicycle officers apprised of the location and
+description of the suspect. When the conrdinntor(s) decided the time was appropriate, the bicycle ofﬁcers would be
+summoned to contact the described suspect. for whom probable cause would exist for an arrest. However. in order to
+prolong the duration of the investigation and to maximize its effectiveness, ofﬁcers would utilize a ruse to contact the
+suspect(s) and obtain or verify his or her identity for future prosecution. l deployed with Ofﬁcer T. Bums #5438, while
+
+Ofﬁcers Bowling #56l7 nnd Lim #6685 deployed as the other team.
+
+Buy# 4 of8
+
+At about 8:07 n.m., Ofﬁcer Burns and I contacted a suspect who had completed a sale of suspected narcotics to an
+undercover ofﬁcer. He was described as a black male wearing a black coat (hood up), bluejeans, red shoes, with white
+headphone wires protruding’from'the hood and currying a brown paper bag. We were told that the suspect was-walking
+westbound on the norﬂl sidewalk ofPike St (from 3" Avenue). As luck would have it, Ofﬁcer Burns and I were
+stopped in the parking garage on the north side of the 200 block of Pike St, and the suspect came right to us. The
+
+description was thorough and he was the only person who matched it.
+
+Observers continued via radio that we had contacted the correct person, Officer Burns took the lead in the contact. The
+mule identiﬁed himself as Wesley] Mitchell born 6/26/85. Ofﬁcer Burns asked questions to conﬁrm the identiﬁcation,
+while I submitted his name for an electronic database query, In addition to the similarity of physical description listed
+on computer enlries, Mr. Mitchell conﬁrmed his DOC number when I asked him Further, I was able to look at a
+
+previous booking photo of Mr. Mitchell and verify his identity.
+
+The contact lasted only a few minutes and he was released without incident. Upon returning to the precinct, I viewed a
+DOL photo depicting Mr. Mitchell, which further veriﬁed his identity.
+
+Farm 927 Rav.11/o7 Page I ufl
+
+For: 6569 Printed On: May-26-2015 (Tue.) Page 8 of 23
+
+ 
+
+dyn-160-39-135-68:seattle kaitlincough$ 
